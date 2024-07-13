@@ -41,7 +41,7 @@ This function moves the mouse to the coordinates of a found minnow and clicks to
 `Style`:  
 This class is used to define text styles for console messages (colors and formatting).
 
-`main()`:
+`main()`:  
 This main function executes an infinite loop that :
 - Checks inventory for a minnow and uses it if found (if not, it uses the regular bait)
 - Simulates keystrokes to attach bait and start fishing
