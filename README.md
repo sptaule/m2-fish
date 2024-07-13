@@ -26,22 +26,22 @@ This function finds and activates the "Metin2" game window to ensure that keyboa
 `get_window_dimensions(game_window)`:  
 This function returns the dimensions of the game window and its coordinates on the screen.
 
-send_key(key):  
+`send_key(key)`:  
 This function simulates the pressing and releasing of a key on the keyboard, with a pause in between.
 
-check_for_screenshot():  
+`check_for_screenshot()`:  
 This function captures a specific part of the screen and uses OpenCV to check whether a predefined fish image appears in this capture.
 
-check_inventory_for_minnow():  
+`check_inventory_for_minnow()`:  
 This function captures a part of the screen corresponding to the player's inventory and detects the presence of minnows. If found, it returns the bait's coordinates.
 
-use_minnow(x, y):  
+`use_minnow(x, y)`:  
 This function moves the mouse to the coordinates of a found minnow and clicks to use it.
 
-Style:  
+`Style`:  
 This class is used to define text styles for console messages (colors and formatting).
 
-main():
+`main()`:
 This main function executes an infinite loop that :
 - Checks inventory for a minnow and uses it if found (if not, it uses the regular bait)
 - Simulates keystrokes to attach bait and start fishing
