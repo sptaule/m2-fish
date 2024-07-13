@@ -1,6 +1,6 @@
 # m2-fish
 
-A little fishbot for the Metin2 fishing system
+A little fishbot for the old Metin2 fishing system
 
 ## Requirements
 
