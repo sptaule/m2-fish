@@ -144,7 +144,7 @@ def main():
                     print(message)
                     break
                 elif time.time() - start_time >= MAX_IMAGE_CHECK_TIME:
-                    print(f"{Style.WARNING}No image detected in 30 seconds, restarting the process{Style.END}")
+                    print(f"{Style.WARNING}No image detected in {MAX_IMAGE_CHECK_TIME} seconds, restarting the process{Style.END}")
                     focus_game_window()
                     send_key(Key.f3)
                     time.sleep(DELAY_BEFORE_RESTART)
