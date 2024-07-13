@@ -68,3 +68,4 @@ If OpenCV did not detect any fish, it will restart process after 60 seconds.
 - [ ] make it works with multiple game clients
 - [ ] make it works with any window dimensions and positions
 - [ ] make the camera zoom level more clear
+- [ ] make it works with hidden (or even minimized?) windows with the help of `PrintWindow` function from the Windows API
