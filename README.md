@@ -65,6 +65,6 @@ If OpenCV did not detect any fish, it will restart process after 60 seconds.
 - Don't move your mouse or type when the character is using bait or using fishing rod
 
 ## Todo-list
-- [] make it works with multiple game clients
-- [] make it works with any window dimensions and positions
-- [] make the camera zoom level more clear
+- [ ] make it works with multiple game clients
+- [ ] make it works with any window dimensions and positions
+- [ ] make the camera zoom level more clear
