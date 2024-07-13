@@ -63,6 +63,7 @@ If OpenCV did not detect any fish, it will restart process after 60 seconds.
 - Don't minimize the game window
 - Don't hide the game window with any other window
 - Don't move your mouse or type when the character is using bait or using fishing rod
+- It is strongly recommended that your active inventory page is empty (room to fish, using and detecting minnows, etc)
 
 ## Todo-list
 - [ ] make it works with multiple game clients
