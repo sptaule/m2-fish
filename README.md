@@ -56,13 +56,14 @@ If OpenCV did not detect any fish, it will restart process after 60 seconds.
 2. Place the game window at (0, 0) which corresponds to the top left corner as accurately as you can (this is important for now)
 3. Make sure the game window's title is "METIN2", otherwise add its name to "servers" block inside the script and use it inside "params" block
 4. Zoom the camera so the character's feet are barely visible on the screen (it might requires multiple adjustments from you)
-5. Put fishing action button on `F3` and your baits on `F4` shortcuts
+5. Put fishing action button on `F3` and your baits (paste or worms) on `F4` actionbar shortcuts
 6. Launch the script with `python ./fishbot.py`
 
 *Important*  
 - Don't minimize the game window
 - Don't hide the game window with any other window
 - Don't move your mouse or type when the character is using bait or using fishing rod
+- Your game's inventory must be at its original postion (bottom-right)
 - It is strongly recommended that your active inventory page is empty (room to fish, using and detecting minnows, etc)
 
 ## Todo-list
