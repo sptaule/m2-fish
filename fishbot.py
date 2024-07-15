@@ -56,6 +56,16 @@ def send_key(key):
     keyboard.press(key)
     time.sleep(0.05)
     keyboard.release(key)
+    
+    
+def random_delay(delay):
+    random_value = random.uniform(0.01, 0.25)
+    if random.choice([True, False]):
+        delay += random_value
+    else:
+        delay -= random_value
+    delay = round(delay, 2)
+    return delay
 
 
 def check_for_screenshot():
@@ -131,8 +141,9 @@ def main():
                 # Check if image appears
                 if check_for_screenshot():
                     print(f"{Style.GREEN}Fish detected{Style.END}")
-                    time.sleep(DELAY_BEFORE_HOOK)
-                    print("Trying to pull out the fish")
+                    delay_before_hook = random_delay(DELAY_BEFORE_HOOK)
+                    time.sleep(delay_before_hook)
+                    print(f"Trying to pull out the fish ({delay_before_hook}s)")
                     focus_game_window()
                     send_key(Key.f3)
                     time.sleep(DELAY_BEFORE_RESTART)
@@ -144,8 +155,9 @@ def main():
                     print(message)
                     break
                 elif time.time() - start_time >= MAX_IMAGE_CHECK_TIME:
-                    print(f"{Style.WARNING}No image detected in {MAX_IMAGE_CHECK_TIME} seconds, restarting the process{Style.END}")
+                    print(f"{Style.FAIL}No image detected in 30 seconds, restarting the process{Style.END}")
                     focus_game_window()
+                    send_key(Key.f4)
                     send_key(Key.f3)
                     time.sleep(DELAY_BEFORE_RESTART)
                     break
