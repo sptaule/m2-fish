@@ -61,13 +61,18 @@ python -m ensurepip --default-pip
 ```
 pip install opencv-python numpy pygetwindow pynput Pillow
 ```
-   
-2. Open the Metin2 game at 1024 x 768 resolution (this is important for now)
-3. Place the game window at (0, 0) which corresponds to the top left corner as accurately as you can (this is important for now)
-4. Make sure the game window's title is "METIN2", otherwise add its name to "servers" block inside the script and use it inside "params" block
-5. Zoom the camera so the character's feet are barely visible on the screen (it might requires multiple adjustments from you)
-6. Put fishing action button on `F3` and your baits (paste or worms) on `F4` actionbar shortcuts
-7. Launch the script with `python ./fishbot.py`
+
+2. Clone this repository by downloading [zip](https://github.com/sptaule/m2-fish/archive/refs/heads/main.zip) directly or with :
+```
+git clone https://github.com/sptaule/m2-fish.git
+```
+  
+3. Open the Metin2 game at 1024 x 768 resolution (this is important for now)
+4. Place the game window at (0, 0) which corresponds to the top left corner as accurately as you can (this is important for now)
+5. Make sure the game window's title is "METIN2", otherwise add its name to "servers" block inside the script and use it inside "params" block
+6. Zoom the camera so the character's feet are barely visible on the screen (it might requires multiple adjustments from you)
+7. Put fishing action button on `F3` and your baits (paste or worms) on `F4` actionbar shortcuts
+8. Launch the script with `python ./fishbot.py`
 
 *Important*  
 - Don't minimize the game window
