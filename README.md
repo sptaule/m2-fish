@@ -51,13 +51,23 @@ If OpenCV did not detect any fish, it will restart process after 60 seconds.
 
 ## How to use it
 
-0. Install the requirements with `pip install`
-1. Open the Metin2 game at 1024 x 768 resolution (this is important for now)
-2. Place the game window at (0, 0) which corresponds to the top left corner as accurately as you can (this is important for now)
-3. Make sure the game window's title is "METIN2", otherwise add its name to "servers" block inside the script and use it inside "params" block
-4. Zoom the camera so the character's feet are barely visible on the screen (it might requires multiple adjustments from you)
-5. Put fishing action button on `F3` and your baits (paste or worms) on `F4` actionbar shortcuts
-6. Launch the script with `python ./fishbot.py`
+Make sure you have Python installed on your system. Here is the link for [Windows downloads](https://www.python.org/downloads/release/python-3125/).
+Install `pip`. Here is the command you have to execute on Windows inside an admin powershell :
+```
+python -m ensurepip --default-pip
+```
+
+1. Install the requirements with `pip install` :
+```
+pip install opencv-python numpy pygetwindow pynput Pillow
+```
+   
+2. Open the Metin2 game at 1024 x 768 resolution (this is important for now)
+3. Place the game window at (0, 0) which corresponds to the top left corner as accurately as you can (this is important for now)
+4. Make sure the game window's title is "METIN2", otherwise add its name to "servers" block inside the script and use it inside "params" block
+5. Zoom the camera so the character's feet are barely visible on the screen (it might requires multiple adjustments from you)
+6. Put fishing action button on `F3` and your baits (paste or worms) on `F4` actionbar shortcuts
+7. Launch the script with `python ./fishbot.py`
 
 *Important*  
 - Don't minimize the game window
